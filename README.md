@@ -8,7 +8,7 @@
 
 ### 1. Criação do processo passo-a-passo ###
 
-![process](./img/processo_titanic.png "Processo RapidMiner")
+![imagem_processo_rapidminer](./img/processo_titanic.png "Processo RapidMiner")
 
 1. Transformação do campo **Tarifa** de uma valor textual para um valor numérico (real). Aqui, considerei
 o caractere "." como separador das casas decimais. Como alguns valores possuíam mais de um separador decimal,
@@ -54,24 +54,38 @@ atribuição do papel *id* ao campo **IDPessoa**.
 para classificá-los e mostrar se um determinado passageiro sobreviveu ou não ao naufrágio do Titanic, bem como
 as chances desta hipótese ser verdadeira.
 
-### 2. Imagens Adicionais ###
+[Download do Arquivo RMP](./titanic.rmp)
+
+### 2. Resultados ###
+
+Durante a construção do processo no RapidMiner, verifiquei que o modelo mais assertivo foi a Árvore de Decisão.
+Foi o modelo que apresentou melhor acurácia no teste de validação cruzada, bem como o modelo que apresentou
+melhor performance na curva ROC, trazendo menos falsos positivos em relação aos verdadeiros positivos.
+
+Sendo assim, a acurácia do nosso modelos de predição é a seguinte: quando classificado como sobrevivente, há 83,51%
+de chances de que a hipótese seja verdadeira; quando classificado como não sobrevivente, há 77,26% de chances de
+que a hipótese seja verdadeira.
+
+[Download dos Resultados em XLSX](./results.xlsx)
+
+### 3. Imagens Adicionais ###
 
 #### Peso dos Campos ####
 
-![weight](./img/weight.png "Peso dos Campos")
+![imagem_peso_campos](./img/weight.png "Peso dos Campos")
 
 #### Performance dos Modelos ####
 
-![perf_regressao](./img/perf_regressao.png "Performance Regressão")
-![perf_arvore](./img/perf_arvore.png "Performance Árvore")
-![perf_naivebayes](./img/perf_naivebayes.png "Performance NaiveBayes")
-![perf_knn](./img/perf_knn.png "Performance k-NN")
-![ttest](./img/ttest.png "T-Test")
+![imagem_perf_regressao](./img/perf_regressao.png "Performance Regressão")
+![imagem_perf_arvore](./img/perf_arvore.png "Performance Árvore")
+![imagem_perf_naivebayes](./img/perf_naivebayes.png "Performance NaiveBayes")
+![imagem_perf_knn](./img/perf_knn.png "Performance k-NN")
+![imagem_ttest](./img/ttest.png "T-Test")
 
 #### ROC dos Modelos ####
 
-![roc](./img/roc.png "ROC dos Modelos")
+![imgem_curva_roc](./img/roc.png "Curva ROC dos Modelos")
 
 #### Árvore de Decisão ####
 
-![tree](./img/arvore.png "Árvore de Decisão")
+![imagem_arvore_decisao](./img/arvore.png "Árvore de Decisão")
